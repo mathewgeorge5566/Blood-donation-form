@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap');
+*{
+	margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-famil: 'Montserrat',sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.header img{
+    width: 40px;
+    height: 40px;
+
+}
+.header{
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 5px;
+    background-color: #FFE1DA;
+}
+.subheader{
+    text-align: right;
+    padding: 10px;
+}
+
+.wapper{
+
+    max-width:600px;
+    width: 100%;
+    background: white;
+    margin: 10px auto;
+    padding: 30px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+}
+.title{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #fec107;
+    text-transform: uppercase;
+    text-align: center;
+}
+.wapper .form{
+    width: 100%;
+}
+.form .input-field{
+     margin-bottom: 15px;
+     display: flex;
+     align-items: center;
+}
+.form .input-field label{
+    width: 200px;
+    color: #757575;
+    margin-right: 10px;
+    font-size: 20px;
+}
+ .form .input-field .input,
+ .form .input-field .textarea
+{
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 17px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+.inputr{
+   width: 45px;
+    font-size: 17px;
+    padding: 8px 10px;
+    
+}
+ .textarea{
+    width: 100%;
+    resize: none;
+    height: 125px;
+}
+.wapper .form .input-field .textarea:focus,
+.wapper .form .input-field .input:focus{
+border: 1px solid #fec107;
+}
+.check {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+.btn{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 20px;
+    background: blue;
+    color: white;
+    border-radius: 3px;
+    outline: none;
+}
+.form .input-field .btn:hover{
+  background: #ffd658;
+}
+.bg{
+
+     background-image: url(img/2.jpg); 
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+img{
+    width: 100%;
+    text-align: center;
+}
+@media (max-width:420px) {
+
+  .wapper .form .input-field{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wapper .form .input-field label{
+    margin-bottom: 5px;
+  }
+  .wapper .form .input-field{
+    flex-direction: row;
+  }
+}
+
